@@ -1,0 +1,19 @@
+{
+  "block.villageressences.coal_forge": "Coal Forge",
+  "block.villageressences.diamond_forge": "Diamond Forge",
+  "block.villageressences.emerald_forge": "Emerald Forge",
+  "block.villageressences.gold_forge": "Gold Forge",
+  "block.villageressences.iron_forge": "Iron Forge",
+  "block.villageressences.lapis_forge": "Lapis Forge",
+  "block.villageressences.quartz_forge": "Quartz Forge",
+  "block.villageressences.redstone_forge": "Redstone Forge",
+  "item.villageressences.coal_essence": "Coal Essence",
+  "item.villageressences.diamond_essence": "Diamond Essence",
+  "item.villageressences.emerald_essence": "Emerald Essence",
+  "item.villageressences.gold_essence": "Gold Essence",
+  "item.villageressences.iron_essence": "Iron Essence",
+  "item.villageressences.lapis_essence": "Lapis Essence",
+  "item.villageressences.quartz_essence": "Quartz Essence",
+  "item.villageressences.redstone_essence": "Redstone Essence",
+  "itemGroup.villagerEssencesTab": "Villager Essences"
+}

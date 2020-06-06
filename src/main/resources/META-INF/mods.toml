@@ -1,0 +1,20 @@
+modLoader="javafml"
+loaderVersion="[31,)"
+issueTrackerURL="http://my.issue.tracker/"
+[[mods]]
+modId="villageressences"
+version="1.15.2-1.0.0"
+displayName="Villager Essences"
+updateJSONURL="http://myurl.me/"
+displayURL="http://example.com/"
+credits="OneLousyGamer"
+authors="OneLousyGamer"
+description='''
+A simple mod that allows you to create ores by buying their essence from villagers.
+'''
+[[dependencies.villageressences]]
+    modId="lousylib"
+    mandatory=false
+    versionRange="[1.0.0,)"
+    ordering="AFTER"
+    side="BOTH"
