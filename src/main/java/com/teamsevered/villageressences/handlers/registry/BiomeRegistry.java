@@ -2,6 +2,7 @@ package com.teamsevered.villageressences.handlers.registry;
 
 import com.teamsevered.villageressences.util.Reference;
 import com.teamsevered.villageressences.world.biomes.SandyEssences;
+import com.teamsevered.villageressences.world.biomes.SandyEssencesBuilder;
 import net.minecraft.block.Blocks;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.world.biome.Biome;
@@ -12,11 +13,9 @@ import net.minecraft.world.gen.surfacebuilders.SurfaceBuilderConfig;
 import net.minecraftforge.common.BiomeDictionary;
 import net.minecraftforge.common.BiomeManager;
 import net.minecraftforge.event.RegistryEvent;
-import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 
@@ -33,16 +32,16 @@ public class BiomeRegistry
                                     .scale(10.0F).temperature(5.0F)
                                     .waterColor(16761027)
                                     .waterFogColor(15910336)
-                                    .surfaceBuilder(SurfaceBuilder.DEFAULT,
-                                            new SurfaceBuilderConfig(
-                                                    com.teamsevered.villageressences.blocks.Blocks.PINK_SAND.getDefaultState(),
-                                                    Blocks.SANDSTONE.getDefaultState(),
-                                                    Blocks.STONE.getDefaultState()
-                                            )
+                                    .surfaceBuilder(
+                                            new ConfiguredSurfaceBuilder<SurfaceBuilderConfig>(
+                                                    register("sandy_surface",
+                                                            new SandyEssencesBuilder(
+                                                                    SurfaceBuilderConfig::deserialize)),
+                                                    new SurfaceBuilderConfig(com.teamsevered.villageressences.blocks.Blocks.PINK_SAND.getDefaultState(),
+                                                            Blocks.SANDSTONE.getDefaultState(),
+                                                            Blocks.STONE.getDefaultState()))
                                     )
-                                    .category(Biome.Category.DESERT).downfall(0F).depth(0.12F).parent(null)
-                        )
-            );
+                                    .category(Biome.Category.DESERT).downfall(0.5f).depth(0.12f).parent(null)));
 
     public static void registerBiomes()
     {
@@ -67,4 +66,5 @@ public class BiomeRegistry
     {
         registerBiomes();
     }
+
 }

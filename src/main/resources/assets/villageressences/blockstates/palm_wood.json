@@ -1,5 +1,7 @@
 {
   "variants": {
-    "": { "model": "villageressences:block/palm_wood" }
+    "axis=y":  { "model": "villageressences:block/palm_wood" },
+    "axis=z":   { "model": "villageressences:block/palm_wood", "x": 90 },
+    "axis=x":   { "model": "villageressences:block/palm_wood", "x": 90, "y": 90 }
   }
 }

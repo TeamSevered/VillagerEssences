@@ -3,7 +3,9 @@ package com.teamsevered.villageressences.handlers.registry;
 import com.teamsevered.villageressences.blocks.*;
 import com.teamsevered.villageressences.util.Reference;
 
+import com.teamsevered.villageressences.world.features.PalmTree;
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -30,7 +32,7 @@ public class BlockRegistry
     public static final RegistryObject<Block> REDSTONE_FORGE = BLOCKS.register("redstone_forge", RedstoneForge::new);
     public static final RegistryObject<Block> PALM_LEAVES = BLOCKS.register("palm_leaves", PalmLeaves::new);
     public static final RegistryObject<Block> PALM_PLANKS = BLOCKS.register("palm_planks", PalmPlanks::new);
-    public static final RegistryObject<Block> PALM_SAPLING = BLOCKS.register("palm_sapling", PalmSapling::new);
+    public static final RegistryObject<Block> PALM_SAPLING = BLOCKS.register("palm_sapling", () -> new PalmSapling(new PalmTree(), Block.Properties.from(Blocks.OAK_SAPLING)));
     public static final RegistryObject<Block> PALM_WOOD = BLOCKS.register("palm_wood", PalmWood::new);
     public static final RegistryObject<Block> PINK_SAND = BLOCKS.register("pink_sand", PinkSand::new);
 

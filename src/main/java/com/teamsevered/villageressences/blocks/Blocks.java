@@ -1,5 +1,7 @@
 package com.teamsevered.villageressences.blocks;
 
+import com.teamsevered.villageressences.world.features.PalmTree;
+
 import net.minecraft.block.Block;
 
 public class Blocks
@@ -16,5 +18,5 @@ public class Blocks
     public static final Block PALM_LEAVES = new PalmLeaves();
     public static final Block PALM_WOOD = new PalmWood();
     public static final Block PALM_PLANKS = new PalmPlanks();
-    public static final Block PALM_SAPLING = new PalmSapling();
+    public static final Block PALM_SAPLING = new PalmSapling(new PalmTree(), Block.Properties.from(net.minecraft.block.Blocks.OAK_SAPLING));
 }
