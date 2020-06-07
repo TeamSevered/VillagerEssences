@@ -1,4 +1,5 @@
 {
+  "biome.villageressences.sandy_essences": "Sandy Essences",
   "block.villageressences.coal_forge": "Coal Forge",
   "block.villageressences.diamond_forge": "Diamond Forge",
   "block.villageressences.emerald_forge": "Emerald Forge",
@@ -7,6 +8,10 @@
   "block.villageressences.lapis_forge": "Lapis Forge",
   "block.villageressences.quartz_forge": "Quartz Forge",
   "block.villageressences.redstone_forge": "Redstone Forge",
+  "block.villageressences.palm_leaves": "Palm Leaves",
+  "block.villageressences.palm_planks": "Palm Planks",
+  "block.villageressences.palm_sapling": "Palm Sapling",
+  "block.villageressences.pink_sand": "Pink Sand",
   "item.villageressences.coal_essence": "Coal Essence",
   "item.villageressences.diamond_essence": "Diamond Essence",
   "item.villageressences.emerald_essence": "Emerald Essence",

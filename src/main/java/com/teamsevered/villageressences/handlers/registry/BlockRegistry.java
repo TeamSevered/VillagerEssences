@@ -28,7 +28,6 @@ public class BlockRegistry
     public static final RegistryObject<Block> LAPIS_FORGE = BLOCKS.register("lapis_forge", LapisForge::new);
     public static final RegistryObject<Block> QUARTZ_FORGE = BLOCKS.register("quartz_forge", QuartzForge::new);
     public static final RegistryObject<Block> REDSTONE_FORGE = BLOCKS.register("redstone_forge", RedstoneForge::new);
-
     public static final RegistryObject<Item> COAL_FORGE_ITEM = ItemsRegistry.ITEMS.register("coal_forge", () -> new BlockBase(COAL_FORGE.get()));
     public static final RegistryObject<Item> DIAMOND_FORGE_ITEM = ItemsRegistry.ITEMS.register("diamond_forge", () -> new BlockBase(DIAMOND_FORGE.get()));
     public static final RegistryObject<Item> EMERALD_FORGE_ITEM = ItemsRegistry.ITEMS.register("emerald_forge", () -> new BlockBase(EMERALD_FORGE.get()));

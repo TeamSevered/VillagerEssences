@@ -1,11 +1,13 @@
 package com.teamsevered.villageressences;
 
 import com.teamsevered.villageressences.handlers.POIHandler;
+import com.teamsevered.villageressences.handlers.registry.BiomeRegistry;
 import com.teamsevered.villageressences.handlers.registry.BlockRegistry;
 import com.teamsevered.villageressences.handlers.registry.ItemsRegistry;
 import com.teamsevered.villageressences.util.ReflectionUtil;
 
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -21,7 +23,9 @@ public class VillagerEssences
 {
     private static final Logger LOGGER = LogManager.getLogger();
 
-    public VillagerEssences() {
+    public VillagerEssences()
+    {
+        final IEventBus bus =  FMLJavaModLoadingContext.get().getModEventBus();
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::enqueueIMC);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::processIMC);
@@ -29,6 +33,7 @@ public class VillagerEssences
 
         BlockRegistry.registerBlocks();
         ItemsRegistry.registerItems();
+        BiomeRegistry.BIOMES.register(bus);
 
         MinecraftForge.EVENT_BUS.register(this);
     }
@@ -39,6 +44,7 @@ public class VillagerEssences
         ReflectionUtil.fixPOITypeBlockStates(POIHandler.DIAMOND_FORGE);
         ReflectionUtil.fixPOITypeBlockStates(POIHandler.EMERALD_FORGE);
         ReflectionUtil.fixPOITypeBlockStates(POIHandler.GOLD_FORGE);
+        ReflectionUtil.fixPOITypeBlockStates(POIHandler.IRON_FORGE);
         ReflectionUtil.fixPOITypeBlockStates(POIHandler.LAPIS_FORGE);
         ReflectionUtil.fixPOITypeBlockStates(POIHandler.QUARTZ_FORGE);
         ReflectionUtil.fixPOITypeBlockStates(POIHandler.REDSTONE_FORGE);

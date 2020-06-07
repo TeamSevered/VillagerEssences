@@ -17,7 +17,7 @@ import net.minecraftforge.registries.IForgeRegistry;
 
 import java.util.Set;
 
-public class VillagerRegistryHandler
+public class VillagerRegistry
 {
     public static Set<BlockState> getAllStates(Block block)
     {

@@ -12,4 +12,9 @@ public class Blocks
     public static final Block LAPIS_FORGE = new LapisForge();
     public static final Block QUARTZ_FORGE = new QuartzForge();
     public static final Block REDSTONE_FORGE = new QuartzForge();
+    public static final Block PINK_SAND = new PinkSand();
+    public static final Block PALM_LEAVES = new PalmLeaves();
+    public static final Block PALM_WOOD = new PalmWood();
+    public static final Block PALM_PLANKS = new PalmPlanks();
+    public static final Block PALM_SAPLING = new PalmSapling();
 }
