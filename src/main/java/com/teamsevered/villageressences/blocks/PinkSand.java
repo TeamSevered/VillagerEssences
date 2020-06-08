@@ -11,7 +11,7 @@ public class PinkSand extends Block
     {
         super(Block.Properties.create(Material.SAND)
                 .hardnessAndResistance(10.0F, 100.0F)
-                .sound(SoundType.GROUND)
+                .sound(SoundType.SAND)
                 .harvestLevel(0)
                 .harvestTool(ToolType.SHOVEL));
     }

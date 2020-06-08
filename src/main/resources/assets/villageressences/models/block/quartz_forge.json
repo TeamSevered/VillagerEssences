@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "villageressences:blocks/quartz_forge"
+    "all": "block/quartz_block"
   }
 }

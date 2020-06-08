@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "villageressences:blocks/lapis_forge"
+    "all": "block/lapis_block"
   }
 }

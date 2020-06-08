@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "minecraft:blocks/pink_sand"
+    "all": "villageressences:blocks/pink_sand"
   }
 }

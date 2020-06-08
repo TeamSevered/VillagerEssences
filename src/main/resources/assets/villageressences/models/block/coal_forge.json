@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "minecraft:blocks/smithing_table"
+    "all": "block/coal_block"
   }
 }

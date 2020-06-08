@@ -1,7 +1,7 @@
 {
   "parent": "block/cube_column",
   "textures": {
-    "end": "minecraft:blocks/palm_wood_top",
-    "side": "minecraft:blocks/palm_wood"
+    "end": "block/acacia_log_top",
+    "side": "block/acacia_log"
   }
 }
